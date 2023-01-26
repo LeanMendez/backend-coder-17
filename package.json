@@ -9,7 +9,8 @@
     "node-fork": "node src/server.js",
     "node-cluster": "node src/server.js -p 8081 -m CLUSTER",
     "artillery-cluster": "artillery quick --count 20 -n 50 http://localhost:8081/randoms?cant=10 > src/benchmarks/info-cluster-prueba.txt",
-    "artillery-fork": "artillery quick --count 20 -n 50 http://localhost:8081/randoms?cant=10 > src/benchmarks/info-fork-prueba.txt"
+    "artillery-fork": "artillery quick --count 20 -n 50 http://localhost:8081/randoms?cant=10 > src/benchmarks/info-fork-prueba.txt",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
