@@ -1,48 +1,11 @@
-# Desafío N°15
-## Consigna 1
-Incorporar al proyecto de servidor de trabajo la compresión gzip.
+# Desafío N°17
+## Consigna
+Crear un proyecto en Heroku.com para subir el servidor que venimos realizando, reformando todo lo necesario para su correcto funcionamiento en la nube.
 
-Verificar sobre la ruta /info con y sin compresión, la diferencia de cantidad de bytes devueltos en un caso y otro.
+Subir el código a Heroku.com, sin olvidar incluir el archivo .gitignore para evitar subir los node_modules. Comprobar que el proyecto inicie de manera correcta en la nube. Verificar que en su ruta raíz se encuentre la página pública del servidor.
 
-Luego implementar loggueo (con alguna librería vista en clase) que registre lo siguiente:
+El servidor debe seguir funcionando en forma local.
 
-- Ruta y método de todas las peticiones recibidas por el servidor (info)
-- Ruta y método de las peticiones a rutas inexistentes en el servidor (warning)
-- Errores lanzados por las apis de mensajes y productos, únicamente (error)
+Realizar un cambio a elección en alguna vista, probar en forma local y subir nuevamente el proyecto a Heroku, verificando que la nueva reforma esté disponible online.
 
-
-### Considerar el siguiente criterio:
-Loggear todos los niveles a consola (info, warning y error)
-
-Registrar sólo los logs de warning a un archivo llamada warn.log
-
-Enviar sólo los logs de error a un archivo llamada error.log
-
-
-## Consigna 2
-
-Luego, realizar el análisis completo de performance del servidor con el que venimos trabajando.
-
-Vamos a trabajar sobre la ruta '/info', en modo fork, agregando ó extrayendo un console.log de la información colectada antes de devolverla al cliente. Además desactivaremos el child_process de la ruta '/randoms'
-
-Para ambas condiciones (con o sin console.log) en la ruta '/info' OBTENER:
-
-1) El perfilamiento del servidor, realizando el test con --prof de node.js. Analizar los resultados obtenidos luego de procesarlos con --prof-process. 
-2) Utilizaremos como test de carga Artillery en línea de comandos, emulando 50 conexiones concurrentes con 20 request por cada una. 
-3) Extraer un reporte con los resultados en archivo de texto.
-
-## Resolución de las consignas
-
-Se implementó una ruta 
-```bash
-http://localhost:8080/info
-```
-
-y otra en donde los recursos que entrega la misma tienen compresion 
-
-```bash
-http://localhost:8080/infozip
-```
-el objetivo de ambas rutas es evidenciar la compresion de los recursos de las mismas. 
-
-
+Revisar a través de una consola local, los mensajes enviados por nuestro servidor en Heroku a su propia consola.
