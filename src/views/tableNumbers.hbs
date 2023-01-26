@@ -1,0 +1,20 @@
+{{#if numbers}}
+<div class="d-flex bg-primary bg-opacity-75 justify-content-center">
+<table class="w-50 text-center table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Numero</th>
+      <th scope="col">Cantidad de repeticiones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each numbers}}
+        <tr>
+            <td>{{@key}}</td>
+            <td>{{this}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+{{/if}}

@@ -1,0 +1,1060 @@
+Statistical profiling result from src/benchmarks/isolate-bloq.log, (4931 ticks, 2 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   3465   70.3%          /usr/local/bin/node
+    151    3.1%          [vdso]
+    126    2.6%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      7    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     27    0.5%    2.3%  LazyCompile: *parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     21    0.4%    1.8%  LazyCompile: *normalizeString node:path:66:25
+     17    0.3%    1.4%  LazyCompile: *wrap /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     15    0.3%    1.3%  LazyCompile: *resolve node:path:1091:10
+      7    0.1%    0.6%  LazyCompile: *next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      7    0.1%    0.6%  LazyCompile: *deserializeObject /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/parser/deserializer.js:65:27
+      6    0.1%    0.5%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:676:37
+      4    0.1%    0.3%  LazyCompile: *extend /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      4    0.1%    0.3%  LazyCompile: *anonymous /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      3    0.1%    0.3%  RegExp: ^(?:\}\}\}\})
+      3    0.1%    0.3%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      3    0.1%    0.3%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      3    0.1%    0.3%  LazyCompile: *SourceNode_walk /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/source-map/lib/source-node.js:221:53
+      3    0.1%    0.3%  Function: ^session /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:179:26
+      3    0.1%    0.3%  Function: ^handle /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/layer.js:86:49
+      3    0.1%    0.3%  Function: ^compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2    0.0%    0.2%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      2    0.0%    0.2%  RegExp: ^(?:\{\{(~)?&)
+      2    0.0%    0.2%  LazyCompile: *step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      2    0.0%    0.2%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      2    0.0%    0.2%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.2%  LazyCompile: *SourceNode_add /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/source-map/lib/source-node.js:172:51
+      2    0.0%    0.2%  LazyCompile: *SourceNode /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/source-map/lib/source-node.js:35:20
+      2    0.0%    0.2%  Function: ^updateServers /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:481:23
+      2    0.0%    0.2%  Function: ^readSync node:fs:705:18
+      2    0.0%    0.2%  Function: ^readFile node:fs:388:18
+      2    0.0%    0.2%  Function: ^handle /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:136:31
+      2    0.0%    0.2%  Function: ^deserializeObject /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/parser/deserializer.js:65:27
+      2    0.0%    0.2%  Function: ^createNewLookupObject /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      2    0.0%    0.2%  Function: ^compileFunction node:vm:316:25
+      2    0.0%    0.2%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\/)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.1%  RegExp: ^(?:\))
+      1    0.0%    0.1%  RegExp: ^(?:@)
+      1    0.0%    0.1%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$
+      1    0.0%    0.1%  RegExp: [ \t]+$
+      1    0.0%    0.1%  RegExp: (^|\r?\n)\s*?$
+      1    0.0%    0.1%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      1    0.0%    0.1%  LazyCompile: *validateString node:internal/validators:161:24
+      1    0.0%    0.1%  LazyCompile: *slice node:buffer:599:12
+      1    0.0%    0.1%  LazyCompile: *realpathSync node:fs:2474:22
+      1    0.0%    0.1%  LazyCompile: *opcode /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      1    0.0%    0.1%  LazyCompile: *getValidatedString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/parser/deserializer.js:650:28
+      1    0.0%    0.1%  LazyCompile: *generateList /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      1    0.0%    0.1%  LazyCompile: *execIteration /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:39:27
+      1    0.0%    0.1%  LazyCompile: *calcRandomNumbers file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/child/random.js:1:34
+      1    0.0%    0.1%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1    0.0%    0.1%  LazyCompile: *Long.add /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/long.js:252:35
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1    0.0%    0.1%  Function: ^writeInt32LE node:internal/buffer:860:22
+      1    0.0%    0.1%  Function: ^wrapper /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:12:33
+      1    0.0%    0.1%  Function: ^wrapmethods /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:394:25
+      1    0.0%    0.1%  Function: ^wrap /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+      1    0.0%    0.1%  Function: ^validateEncoding node:internal/validators:348:26
+      1    0.0%    0.1%  Function: ^validateClose /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:22:23
+      1    0.0%    0.1%  Function: ^validateBoolean node:internal/validators:217:25
+      1    0.0%    0.1%  Function: ^unrefActive node:internal/timers:322:21
+      1    0.0%    0.1%  Function: ^trim_prefix /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.1%  Function: ^stripFlags /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:52:20
+      1    0.0%    0.1%  Function: ^step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:23:22
+      1    0.0%    0.1%  Function: ^stat node:internal/modules/cjs/loader:158:14
+      1    0.0%    0.1%  Function: ^shouldDestroy /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:435:27
+      1    0.0%    0.1%  Function: ^serverUpdateHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:313:24
+      1    0.0%    0.1%  Function: ^sendFile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/send/index.js:712:51
+      1    0.0%    0.1%  Function: ^resolvePath /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1    0.0%    0.1%  Function: ^remove node:internal/linkedlist:16:16
+      1    0.0%    0.1%  Function: ^read node:internal/fs/read_file_context:85:7
+      1    0.0%    0.1%  Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    0.0%    0.1%  Function: ^popAsyncContext node:internal/async_hooks:553:25
+      1    0.0%    0.1%  Function: ^passLookupPropertyOption /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:366:34
+      1    0.0%    0.1%  Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    0.0%    0.1%  Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1    0.0%    0.1%  Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:415:9
+      1    0.0%    0.1%  Function: ^onwrite node:internal/streams/writable:428:17
+      1    0.0%    0.1%  Function: ^next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/send/index.js:728:17
+      1    0.0%    0.1%  Function: ^needFinish node:internal/streams/writable:653:20
+      1    0.0%    0.1%  Function: ^join node:path:1166:7
+      1    0.0%    0.1%  Function: ^isModified /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:425:24
+      1    0.0%    0.1%  Function: ^initSocketHandle node:net:285:26
+      1    0.0%    0.1%  Function: ^initHooksExist node:internal/async_hooks:478:24
+      1    0.0%    0.1%  Function: ^getObserverType node:internal/perf/observe:130:25
+      1    0.0%    0.1%  Function: ^get node:internal/streams/duplex:103:8
+      1    0.0%    0.1%  Function: ^get description /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:72:20
+      1    0.0%    0.1%  Function: ^fromStringFast node:buffer:418:24
+      1    0.0%    0.1%  Function: ^extname node:path:1385:10
+      1    0.0%    0.1%  Function: ^executeDecorators /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:350:27
+      1    0.0%    0.1%  Function: ^execIteration /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:39:27
+      1    0.0%    0.1%  Function: ^escapeExpression /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/utils.js:77:26
+      1    0.0%    0.1%  Function: ^end node:_http_outgoing:953:45
+      1    0.0%    0.1%  Function: ^emitAfterScript node:internal/async_hooks:517:25
+      1    0.0%    0.1%  Function: ^emit node:events:460:44
+      1    0.0%    0.1%  Function: ^each /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:91:22
+      1    0.0%    0.1%  Function: ^done /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/response.js:1033:27
+      1    0.0%    0.1%  Function: ^deserialize /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/bson.js:161:21
+      1    0.0%    0.1%  Function: ^createFunctionContext /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      1    0.0%    0.1%  Function: ^cookieParser /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/cookie-parser/index.js:44:32
+      1    0.0%    0.1%  Function: ^checkRevision /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:34:23
+      1    0.0%    0.1%  Function: ^checkError node:internal/streams/destroy:23:20
+      1    0.0%    0.1%  Function: ^blockParamIndex /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:461:44
+      1    0.0%    0.1%  Function: ^autoEscapeStr node:url:556:23
+      1    0.0%    0.1%  Function: ^anonymous /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      1    0.0%    0.1%  Function: ^_unrefTimer node:net:477:52
+      1    0.0%    0.1%  Function: ^__generator /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:27:58
+      1    0.0%    0.1%  Function: ^TopologyDescription /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:29:16
+      1    0.0%    0.1%  Function: ^Stream node:internal/streams/legacy:10:16
+      1    0.0%    0.1%  Function: ^Socket._writeGeneric node:net:891:42
+      1    0.0%    0.1%  Function: ^ReadableState node:internal/streams/readable:83:23
+      1    0.0%    0.1%  Function: ^Readable.on node:internal/streams/readable:886:33
+      1    0.0%    0.1%  Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    0.0%    0.1%  Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1    0.0%    0.1%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    0.0%    0.1%  Function: ^Long.subtract /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/long.js:720:40
+      1    0.0%    0.1%  Function: ^Long /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/long.js:59:18
+      1    0.0%    0.1%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.1%  Function: ^ExpressHandlebars.getTemplate /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:162:56
+      1    0.0%    0.1%  Function: ^ExpressHandlebars.getPartials /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:93:56
+      1    0.0%    0.1%  Function: ^ExpressHandlebars._resolveViewsPath /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:404:62
+      1    0.0%    0.1%  Function: ^Binary /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/binary.js:42:20
+      1    0.0%    0.1%  Function: ^BinMsg /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:394:16
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:94:3
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:138:40
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/fs/utils:907:42
+      1    0.0%    0.1%  Function: ^<anonymous> node:buffer:354:36
+      1    0.0%    0.1%  Function: ^<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/routes/child.routes.js:17:24
+      1    0.0%    0.1%  Function: ^<anonymous> :1:20
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/socket.io/dist/index.js:290:27
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:280:64
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:95:57
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:331:47
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1    0.0%    0.1%  Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+
+ [C++]:
+   ticks  total  nonlib   name
+    635   12.9%   53.7%  epoll_pwait@@GLIBC_2.6
+    113    2.3%    9.6%  __write@@GLIBC_2.2.5
+     27    0.5%    2.3%  fwrite@@GLIBC_2.2.5
+     25    0.5%    2.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     16    0.3%    1.4%  __libc_malloc@@GLIBC_2.2.5
+     15    0.3%    1.3%  __mprotect@@GLIBC_PRIVATE
+     14    0.3%    1.2%  syscall@@GLIBC_2.2.5
+     14    0.3%    1.2%  _IO_file_xsputn@@GLIBC_2.2.5
+     12    0.2%    1.0%  __read@@GLIBC_2.2.5
+      6    0.1%    0.5%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      4    0.1%    0.3%  cfree@GLIBC_2.2.5
+      3    0.1%    0.3%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    0.1%    0.3%  __pthread_mutex_lock@GLIBC_2.2.5
+      3    0.1%    0.3%  _IO_default_xsputn@@GLIBC_2.2.5
+      2    0.0%    0.2%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      2    0.0%    0.2%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      2    0.0%    0.2%  __pthread_rwlock_rdlock@GLIBC_2.2.5
+      2    0.0%    0.2%  __mmap@@GLIBC_PRIVATE
+      1    0.0%    0.1%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  sigemptyset@@GLIBC_2.2.5
+      1    0.0%    0.1%  pthread_cond_signal@@GLIBC_2.3.2
+      1    0.0%    0.1%  posix_memalign@@GLIBC_2.2.5
+      1    0.0%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+      1    0.0%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  fputc@@GLIBC_2.2.5
+      1    0.0%    0.1%  fflush@@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_mutex_unlock@GLIBC_2.2.5
+      1    0.0%    0.1%  __popcountdi2@@GCC_3.4
+      1    0.0%    0.1%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const@@CXXABI_1.3
+      1    0.0%    0.1%  _IO_setb@@GLIBC_2.2.5
+      1    0.0%    0.1%  _IO_file_write@@GLIBC_2.2.5
+      1    0.0%    0.1%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+    264    5.4%   22.3%  JavaScript
+    916   18.6%   77.5%  C++
+    313    6.3%   26.5%  GC
+   3749   76.0%          Shared libraries
+      2    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     87   40.7%    1.8%  __write@@GLIBC_2.2.5
+     25   11.7%    0.5%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     25   11.7%    0.5%  fwrite@@GLIBC_2.2.5
+     14    6.5%    0.3%  syscall@@GLIBC_2.2.5
+     14    6.5%    0.3%  _IO_file_xsputn@@GLIBC_2.2.5
+     13    6.1%    0.3%  __libc_malloc@@GLIBC_2.2.5
+      6    2.8%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      5    2.3%    0.1%  __mprotect@@GLIBC_PRIVATE
+      3    1.4%    0.1%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    0.9%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.9%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      2    0.9%    0.0%  cfree@GLIBC_2.2.5
+      2    0.9%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      2    0.9%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.5%    0.0%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      1    0.5%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.5%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.5%    0.0%  posix_memalign@@GLIBC_2.2.5
+      1    0.5%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      1    0.5%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.5%    0.0%  fputc@@GLIBC_2.2.5
+      1    0.5%    0.0%  fflush@@GLIBC_2.2.5
+      1    0.5%    0.0%  __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const@@CXXABI_1.3
+      1    0.5%    0.0%  _IO_setb@@GLIBC_2.2.5
+      1    0.5%    0.0%  _IO_file_write@@GLIBC_2.2.5
+      1    0.5%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3465   70.3%  /usr/local/bin/node
+   2128   61.4%    /usr/local/bin/node
+    536   25.2%      Function: ^compileFunction node:vm:316:25
+    533   99.4%        Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+    530   99.4%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+    523   98.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      7    1.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+    218   10.2%      Function: ^moduleStrategy node:internal/modules/esm/translators:114:56
+    218  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:452:28
+    218  100.0%          /usr/local/bin/node
+     76    3.6%      /usr/local/bin/node
+      8   10.5%        Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      8  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      4   50.0%            Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      4   50.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      4    5.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      4  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      4    5.3%        Function: ^FastBuffer node:internal/buffer:958:14
+      4  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2   50.0%            Function: ^allocUnsafeSlow node:buffer:388:50
+      1   25.0%            Function: ^createPool node:buffer:155:20
+      1   25.0%            Function: ^allocate node:buffer:403:18
+      4    5.3%        Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:75:19
+      4  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:15:44
+      4  100.0%            Function: ^wrapper /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:12:33
+      2    2.6%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:396:36
+      2  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      2  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      2    2.6%        Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      2    2.6%        Function: ^quotedString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      2  100.0%          Function: ^pushSource /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      2  100.0%            Function: ^append /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2    2.6%        Function: ^format /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/content-type/index.js:65:17
+      2  100.0%          Function: ^setCharset /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/utils.js:248:41
+      2  100.0%            Function: ^send /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/response.js:111:25
+      2    2.6%        Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    1.3%        LazyCompile: ~use /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/application.js:194:23
+      1  100.0%          Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/server.js:1:1
+      1  100.0%            /usr/local/bin/node
+      1    1.3%        LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      1  100.0%          /usr/local/bin/node
+      1    1.3%        LazyCompile: ~parsePackageName node:internal/modules/esm/resolve:765:26
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:804:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:894:23
+      1    1.3%        LazyCompile: ~parseOpts /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1    1.3%        LazyCompile: ~parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:415:9
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:224:19
+      1    1.3%        LazyCompile: ~parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/dotenv/lib/main.js:11:16
+      1  100.0%          LazyCompile: ~config /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/dotenv/lib/main.js:58:17
+      1  100.0%            Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/server.js:1:1
+      1    1.3%        LazyCompile: ~parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/parse.js:6:15
+      1  100.0%          LazyCompile: ~get_node_abi /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:56:22
+      1  100.0%            LazyCompile: ~get_runtime_abi /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:76:25
+      1    1.3%        LazyCompile: ~next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      1  100.0%          LazyCompile: ~lex /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1  100.0%            LazyCompile: ~lex /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      1    1.3%        LazyCompile: ~isIPv6 node:internal/net:38:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:45:14
+      1  100.0%            LazyCompile: ~lookupAndConnect node:net:1129:26
+      1    1.3%        LazyCompile: ~handleUpgrade /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/ws/lib/websocket-server.js:227:16
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/server.js:383:32
+      1  100.0%            LazyCompile: ~verify /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/server.js:76:11
+      1    1.3%        LazyCompile: ~getPoolSettings /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/knex/lib/client.js:202:18
+      1  100.0%          LazyCompile: ~initializePool /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/knex/lib/client.js:279:17
+      1  100.0%            LazyCompile: ~Client /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/knex/lib/client.js:41:14
+      1    1.3%        LazyCompile: ~encodeUrl /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/encodeurl/index.js:56:20
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/finalhandler/index.js:86:19
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:640:19
+      1    1.3%        LazyCompile: ~de file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@faker-js/faker/dist/esm/chunk-G6GIS7LZ.mjs:12:15055
+      1  100.0%          Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1  100.0%            /usr/local/bin/node
+      1    1.3%        LazyCompile: ~createToken /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/re.js:11:21
+      1  100.0%          Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/re.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    1.3%        LazyCompile: ~createStatusCodeList /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/statuses/index.js:82:31
+      1  100.0%          Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/statuses/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1    1.3%        LazyCompile: ~config /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/dotenv/lib/main.js:58:17
+      1  100.0%          Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/config/configCredenciales.js:1:1
+      1  100.0%            /usr/local/bin/node
+      1    1.3%        LazyCompile: ~SchemaTypeOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/options/SchemaTypeOptions.js:18:14
+      1  100.0%          LazyCompile: ~SchemaDateOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/options/SchemaDateOptions.js:18:1
+      1  100.0%            LazyCompile: ~SchemaType /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schematype.js:42:20
+      1    1.3%        LazyCompile: ~Kareem.pre /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/kareem/index.js:515:32
+      1  100.0%          LazyCompile: ~Schema.pre /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schema.js:1698:32
+      1  100.0%            LazyCompile: ~setupTimestamps /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/timestamps/setupTimestamps.js:10:42
+      1    1.3%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/server.js:45:71
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection_pool.js:411:38
+      1    1.3%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/minimist/index.js:205:44
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~module.exports /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/minimist/index.js:1:27
+      1    1.3%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/finalhandler/node_modules/debug/src/node.js:34:64
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1    1.3%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:224:19
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~make /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:190:8
+      1    1.3%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1  100.0%          LazyCompile: ~step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    1.3%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/compression/node_modules/debug/src/node.js:34:64
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/compression/node_modules/debug/src/node.js:1:1
+      1    1.3%        LazyCompile: *step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^fulfilled /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1    1.3%        LazyCompile: *quotedString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1  100.0%          Function: ^pushSource /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%            Function: ^appendEscaped /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1    1.3%        LazyCompile: *parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1  100.0%          Function: ^parseWithoutProcessing /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%            Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1    1.3%        LazyCompile: *next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      1  100.0%          LazyCompile: *parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1  100.0%            Function: ^parseWithoutProcessing /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1    1.3%        LazyCompile: *<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:130:39
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ^objectLiteral /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:123:40
+      1    1.3%        Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1    1.3%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/knex/lib/schema/tablebuilder.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.3%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.3%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/body-parser/node_modules/debug/src/node.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.3%        Function: ^translatePeerCertificate node:_tls_common:125:34
+      1  100.0%          Function: ^TLSSocket.getPeerCertificate node:_tls_wrap:992:50
+      1  100.0%            LazyCompile: ~onConnectSecure node:_tls_wrap:1524:25
+      1    1.3%        Function: ^stat node:internal/modules/cjs/loader:158:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1    1.3%        Function: ^realpathSync node:fs:2474:22
+      1  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1    1.3%        Function: ^parseQueryStringValues /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/qs/lib/parse.js:51:50
+      1  100.0%          Function: ^module.exports /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/qs/lib/parse.js:239:27
+      1  100.0%            Function: ^parseExtendedQueryString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/utils.js:289:34
+      1    1.3%        Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:415:9
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:224:19
+      1    1.3%        Function: ^onMessage /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection.js:154:14
+      1  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.3%        Function: ^next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      1  100.0%          LazyCompile: ~lex /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1  100.0%            LazyCompile: ~lex /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      1    1.3%        Function: ^isPrevWhitespace /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:148:26
+      1  100.0%          LazyCompile: ~WhitespaceControl.Program /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      1  100.0%            Function: ^accept /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1    1.3%        Function: ^fn node:internal/util:349:14
+      1  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1  100.0%            LazyCompile: *step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    1.3%        Function: ^checkInvalidHeaderChar node:_http_common:221:32
+      1  100.0%          Function: ^<anonymous> node:_http_outgoing:618:45
+      1  100.0%            Function: ^setHeader node:_http_outgoing:642:57
+      1    1.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    1.3%        Function: ^HostAddress /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:871:16
+      1  100.0%          Function: ^fromString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:929:22
+      1  100.0%            Function: ^get hostAddress /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:65:20
+      1    1.3%        /usr/local/bin/node
+      1  100.0%          Function: ^<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@faker-js/faker/dist/esm/chunk-PHKD4ARO.mjs:1:1
+      1  100.0%            /usr/local/bin/node
+     48    2.3%      LazyCompile: ~configSecureContext node:internal/tls/secure-context:124:29
+     48  100.0%        LazyCompile: ~createSecureContext node:_tls_common:99:29
+     48  100.0%          LazyCompile: ~connect node:_tls_wrap:1605:35
+     48  100.0%            LazyCompile: ~makeConnection /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+     36    1.7%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     28   77.8%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5   17.9%          Function: ~<anonymous> node:http:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3   10.7%          Function: ~<anonymous> node:tls:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    7.1%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    7.1%          Function: ~<anonymous> node:internal/child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    7.1%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    7.1%          Function: ~<anonymous> node:_http_client:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      1  100.0%            LazyCompile: ~get node:crypto:369:8
+      1    3.6%          LazyCompile: ~lazyLoadStreams node:fs:2907:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3050:17
+      1    3.6%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      1  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      1    3.6%          Function: ~<anonymous> node:internal/cluster/round_robin_handle:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:internal/assert/assertion_error:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:https:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:assert:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      7   19.4%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      7  100.0%          Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      7  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.8%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1  100.0%          LazyCompile: ~loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      1  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:253:58
+     34    1.6%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     34  100.0%        Function: ^Socket._writeGeneric node:net:891:42
+     33   97.1%          Function: ^Socket._writev node:net:923:36
+     33  100.0%            Function: ^doWrite node:internal/streams/writable:401:17
+      1    2.9%          LazyCompile: ~Socket._writev node:net:923:36
+      1  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:401:17
+     34    1.6%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5   14.7%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      5  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      5   14.7%        Function: ~<anonymous> node:internal/fs/promises:1:1
+      5  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5  100.0%            Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      3    8.8%        LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      3  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      3  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    8.8%        Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3  100.0%            Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      3    8.8%        Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      3  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3  100.0%            Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3    8.8%        Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      3  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    2.9%        LazyCompile: ~setupFetch node:internal/process/pre_execution:198:20
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%        LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%        LazyCompile: ~initializeReport node:internal/process/pre_execution:312:26
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.9%        LazyCompile: ~get BlockList node:net:1980:16
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.9%        Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1    2.9%        Function: ~<anonymous> node:internal/readline/interface:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    2.9%        Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    2.9%        Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    2.9%        Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    2.9%        Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1    2.9%        Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+     31    1.5%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     31  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     31  100.0%          Function: ^Socket._writeGeneric node:net:891:42
+     31  100.0%            Function: ^Socket._write node:net:928:35
+     23    1.1%      Function: ^readFileAfterOpen node:fs:320:27
+
+    635   12.9%  epoll_pwait@@GLIBC_2.6
+
+    151    3.1%  [vdso]
+    105   69.5%    /usr/local/bin/node
+      7    6.7%      Function: ^get maxAge /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/cookie.js:104:13
+      7  100.0%        Function: ^set expires /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/cookie.js:60:14
+      7  100.0%          Function: ^set maxAge /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/cookie.js:83:13
+      5   71.4%            Function: ^Cookie /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/cookie.js:25:46
+      2   28.6%            Function: ^resetMaxAge /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/session.js:58:68
+      5    4.8%      Function: ^resetQueue /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/graceful-fs/graceful-fs.js:383:21
+      5  100.0%        Function: ^closeSync /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/graceful-fs/graceful-fs.js:72:24
+      5  100.0%          Function: ^readFileSync node:fs:465:22
+      5  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      5    4.8%      /usr/local/bin/node
+      2   40.0%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      2  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1   50.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      1   50.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      1   20.0%        LazyCompile: ~primordials.SafePromiseAll node:internal/per_context/primordials:449:30
+      1  100.0%          LazyCompile: ~import node:internal/modules/esm/loader:509:15
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/modules/run_main:55:29
+      1   20.0%        LazyCompile: ~color /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/console-control-strings/index.js:115:32
+      1  100.0%          Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/gauge/themes.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1   20.0%        LazyCompile: ~Connection.openUri /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:681:40
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/index.js:408:49
+      1  100.0%            LazyCompile: ~promiseOrCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      2    1.9%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      2  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    1.9%      Function: ^set maxAge /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/cookie.js:83:13
+      2  100.0%        Function: ^resetMaxAge /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/session.js:58:68
+      2  100.0%          Function: ^touch /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/session/session.js:47:56
+      2  100.0%            Function: ^end /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:250:27
+
+    126    2.6%  /usr/lib/x86_64-linux-gnu/libc.so.6
+     62   49.2%    /usr/local/bin/node
+     20   32.3%      /usr/local/bin/node
+      3   15.0%        Function: ^FastBuffer node:internal/buffer:958:14
+      3  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      3  100.0%            Function: ^allocUnsafeSlow node:buffer:388:50
+      2   10.0%        LazyCompile: *parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      2  100.0%          Function: ^parseWithoutProcessing /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      2  100.0%            Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      2   10.0%        LazyCompile: *<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:130:39
+      2  100.0%          /usr/local/bin/node
+      2  100.0%            Function: ^objectLiteral /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:123:40
+      2   10.0%        Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      2  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      2  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      2   10.0%        Function: ^ExpressHandlebars._renderTemplate /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      2  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2  100.0%            LazyCompile: *step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    5.0%        LazyCompile: ~Mime.lookup /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mime/mime.js:69:33
+      1  100.0%          Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mime/mime.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    5.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~pluralize /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1    5.0%        Function: ^translatePeerCertificate node:_tls_common:125:34
+      1  100.0%          Function: ^TLSSocket.getPeerCertificate node:_tls_wrap:992:50
+      1  100.0%            LazyCompile: ~onConnectSecure node:_tls_wrap:1524:25
+      1    5.0%        Function: ^stat node:internal/modules/cjs/loader:158:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1    5.0%        Function: ^prepareMustache /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:99:25
+      1  100.0%          LazyCompile: *anonymous /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      1  100.0%            LazyCompile: *parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    5.0%        Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:415:9
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:224:19
+      1    5.0%        Function: ^contentType /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/response.js:619:32
+      1  100.0%          Function: ^send /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/response.js:111:25
+      1  100.0%            LazyCompile: *<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1    5.0%        Function: ^accept /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1  100.0%          Function: ^WhitespaceControl.Program /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      1  100.0%            Function: ^accept /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1    5.0%        Function: ^Module node:internal/modules/cjs/loader:197:16
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      2    3.2%      LazyCompile: ~updateServers /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:481:23
+      2  100.0%        LazyCompile: ~serverUpdateHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:313:24
+      1   50.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:473:53
+      1  100.0%            Function: ^emit node:events:460:44
+      1   50.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:473:53
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.6%      LazyCompile: ~undestroy node:internal/streams/destroy:154:19
+      1  100.0%        LazyCompile: ~initSocketHandle node:net:285:26
+      1  100.0%          LazyCompile: ~Socket node:net:329:16
+      1  100.0%            LazyCompile: ~TLSSocket node:_tls_wrap:469:19
+      1    1.6%      LazyCompile: ~serverUpdateHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:313:24
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:473:53
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/server.js:61:55
+      1    1.6%      LazyCompile: ~release /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:620:12
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:134:43
+      1  100.0%          LazyCompile: ~maybeCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:336:23
+      1  100.0%            LazyCompile: ~endSession /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:130:15
+      1    1.6%      LazyCompile: ~randomFillSync node:internal/crypto/random:113:24
+      1  100.0%        Function: ^randomBytes node:internal/crypto/random:93:21
+      1  100.0%          LazyCompile: ~randomBytesSync /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/random-bytes/index.js:72:25
+      1  100.0%            LazyCompile: ~uidSync /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/uid-safe/index.js:75:18
+      1    1.6%      LazyCompile: ~pushSource /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%        LazyCompile: ~appendEscaped /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1  100.0%          LazyCompile: ~compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: ~compileChildren /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1    1.6%      LazyCompile: ~pushAsyncContext node:internal/async_hooks:539:26
+      1  100.0%        LazyCompile: ~emitBeforeScript node:internal/async_hooks:509:26
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.6%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%      LazyCompile: ~prepare /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:16:12
+      1  100.0%        LazyCompile: ~prepareHandshakeDocument /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1  100.0%          LazyCompile: ~performInitialHandshake /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:62:33
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1    1.6%      LazyCompile: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%        LazyCompile: ~immediate /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/immediate.js:14:36
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:575:34
+      1  100.0%            LazyCompile: ~promiseOrCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1    1.6%      LazyCompile: ~module.exports.validate_package_json /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:46:48
+      1  100.0%        LazyCompile: ~validate_config /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%          LazyCompile: ~exports.find /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bcrypt/bcrypt.js:1:1
+      1    1.6%      LazyCompile: ~isRecord /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/utils.js:621:18
+      1  100.0%        LazyCompile: ~transform /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:478:18
+      1  100.0%          LazyCompile: ~setOption /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:427:19
+      1  100.0%            LazyCompile: ~parseOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:195:22
+      1    1.6%      LazyCompile: ~inspect node:internal/util/inspect:310:17
+      1  100.0%        LazyCompile: ~formatWithOptionsInternal node:internal/util/inspect:2154:35
+      1  100.0%          LazyCompile: ~formatWithOptions node:internal/util/inspect:2133:27
+      1  100.0%            LazyCompile: ~value node:internal/console/constructor:337:20
+      1    1.6%      LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:688:33
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%      LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      1  100.0%        LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      1  100.0%          Function: ^moduleProvider node:internal/modules/esm/loader:452:28
+      1  100.0%            /usr/local/bin/node
+      1    1.6%      LazyCompile: ~emitAfterScript node:internal/async_hooks:517:25
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.6%      LazyCompile: ~createAndConnectServer /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:474:32
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:173:57
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~connect /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:154:12
+      1    1.6%      LazyCompile: ~braceExpand /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:109:21
+      1  100.0%        Function: ^braceExpand /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:411:15
+      1  100.0%          LazyCompile: ~make /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:190:8
+      1  100.0%            LazyCompile: ~Minimatch /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:165:15
+      1    1.6%      LazyCompile: ~anonymous /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      1  100.0%        Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1  100.0%          LazyCompile: ~parseWithoutProcessing /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%            LazyCompile: ~parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1    1.6%      LazyCompile: ~afterShutdown node:net:511:23
+      1    1.6%      LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:992:50
+      1  100.0%        LazyCompile: ~onConnectSecure node:_tls_wrap:1524:25
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~TLSSocket._finishInit node:_tls_wrap:926:43
+      1    1.6%      LazyCompile: ~SocketAddress node:internal/socketaddress:47:14
+      1  100.0%        LazyCompile: ~addAddress node:internal/blocklist:60:13
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    1.6%      LazyCompile: ~Schema.virtual /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schema.js:2071:36
+      1  100.0%        LazyCompile: ~addIdGetter /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/schema/idGetter.js:7:38
+      1  100.0%          LazyCompile: ~_preCompile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schema.js:2520:52
+      1  100.0%            LazyCompile: ~compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/model.js:5067:33
+      1    1.6%      LazyCompile: ~MongooseServerSelectionError /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/error/serverSelection.js:26:1
+      1  100.0%        LazyCompile: ~Model.$wrapCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/model.js:5285:31
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/model.js:1471:52
+      1  100.0%            LazyCompile: ~promiseOrCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1    1.6%      LazyCompile: *resolve node:path:1091:10
+      1  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    1.6%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    1.6%      LazyCompile: *<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%        Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ^__awaiter /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1    1.6%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    1.6%      Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    1.6%      Function: ^remove node:internal/linkedlist:16:16
+      1  100.0%        Function: ^unenroll node:timers:78:18
+      1  100.0%          Function: ^clearTimeout node:timers:185:22
+      1  100.0%            Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    1.6%      Function: ^read /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:839:9
+      1  100.0%        Function: ^processIncomingData /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1  100.0%          Function: ^_write /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%            Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1    1.6%      Function: ^processTimers node:internal/timers:492:25
+      1    1.6%      Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      1    1.6%      Function: ^isTraceHTTPEnabled node:internal/http:40:28
+      1  100.0%        Function: ^_finish node:_http_server:229:52
+      1  100.0%          Function: ^end node:_http_outgoing:953:45
+      1  100.0%            Function: ^end /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:250:27
+      1    1.6%      Function: ^hash /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:596:14
+      1  100.0%        Function: ^isModified /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:425:24
+      1  100.0%          Function: ^shouldSetCookie /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:464:29
+      1  100.0%            Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:220:28
+      1    1.6%      Function: ^get node:internal/console/constructor:209:14
+      1  100.0%        Function: ^value node:internal/console/constructor:337:20
+      1  100.0%          Function: ^log node:internal/console/constructor:376:6
+      1  100.0%            /usr/local/bin/node
+      1    1.6%      Function: ^done /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/glob/glob.js:171:17
+      1  100.0%        LazyCompile: ~Glob._processGlobStar2 /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/glob/glob.js:631:45
+      1  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/glob/glob.js:625:43
+      1  100.0%            Function: ^RES /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/inflight/inflight.js:18:28
+      1    1.6%      Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%        Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1  100.0%          Function: ^Socket._writeGeneric node:net:891:42
+      1  100.0%            Function: ^Socket._writev node:net:923:36
+      1    1.6%      Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:102:31
+      1  100.0%            Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:1:1
+      1    1.6%      Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    1.6%      Function: ^JavaScriptCompiler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:24:28
+      1  100.0%        Function: ^compileChildren /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1  100.0%          Function: ^compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            Function: ^compileChildren /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+
+    113    2.3%  __write@@GLIBC_2.2.5
+     87   77.0%    /usr/local/bin/node
+      4    4.6%      /usr/local/bin/node
+      1   25.0%        LazyCompile: ~connect /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:154:12
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:136:49
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/util:350:24
+      1   25.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:45:71
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:380:38
+      1   25.0%        Function: ^createProtoAccessControl /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/internal/proto-access.js:19:34
+      1  100.0%          Function: ^ret._setup /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:217:25
+      1  100.0%            Function: ^ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1   25.0%        Function: ^accept /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1  100.0%          Function: ^WhitespaceControl.Program /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      1  100.0%            Function: ^accept /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      3    3.4%      Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/server.js:1:1
+      3  100.0%        /usr/local/bin/node
+      3  100.0%          /usr/local/bin/node
+      3  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      2    2.3%      Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mime/mime.js:1:1
+      2  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      2    2.3%      Function: ^processTimers node:internal/timers:492:25
+      2    2.3%      Function: ^emit node:events:460:44
+      1   50.0%        LazyCompile: ~processIncomingData /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1  100.0%          LazyCompile: ~_write /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%            LazyCompile: ~writeOrBuffer node:internal/streams/writable:368:23
+      1   50.0%        LazyCompile: ~endReadableNT node:internal/streams/readable:1352:23
+      1  100.0%          Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.1%      LazyCompile: ~writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%        LazyCompile: ~_write node:internal/streams/writable:286:16
+      1  100.0%          Function: ^Writable.write node:internal/streams/writable:336:36
+      1  100.0%            Function: ^ondata node:internal/streams/readable:764:18
+      1    1.1%      LazyCompile: ~writeCommand /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%        LazyCompile: ~write /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection.js:414:15
+      1  100.0%          LazyCompile: ~command /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection.js:261:12
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1    1.1%      LazyCompile: ~updateRsFromPrimary /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology_description.js:257:29
+      1  100.0%        Function: ^update /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology_description.js:131:11
+      1  100.0%          Function: ^serverUpdateHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:313:24
+      1  100.0%            Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:473:53
+      1    1.1%      LazyCompile: ~transform /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:829:18
+      1  100.0%        LazyCompile: ~setOption /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:427:19
+      1  100.0%          LazyCompile: ~parseOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:195:22
+      1  100.0%            LazyCompile: ~MongoClient /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:44:16
+      1    1.1%      LazyCompile: ~step /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1  100.0%            /usr/local/bin/node
+      1    1.1%      LazyCompile: ~shouldSetCookie /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:464:29
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:220:28
+      1  100.0%          Function: ^writeHead /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/on-headers/index.js:28:29
+      1  100.0%            Function: ^_implicitHeader node:_http_server:333:68
+      1    1.1%      LazyCompile: ~setupFetch node:internal/process/pre_execution:198:20
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~setup /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/debug/src/common.js:7:15
+      1  100.0%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/debug/src/node.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.1%      LazyCompile: ~setOption /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:407:19
+      1  100.0%        LazyCompile: ~parseOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:195:22
+      1  100.0%          LazyCompile: ~MongoClient /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:43:16
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:799:31
+      1    1.1%      LazyCompile: ~setOption /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:427:19
+      1  100.0%        LazyCompile: ~parseOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/connection_string.js:195:22
+      1  100.0%          LazyCompile: ~MongoClient /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:44:16
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:236:43
+      1    1.1%      LazyCompile: ~session /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-session/index.js:179:26
+      1  100.0%        LazyCompile: ~handle /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:280:64
+      1    1.1%      LazyCompile: ~serverUpdateHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:313:24
+      1  100.0%        Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:473:53
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/server.js:61:55
+      1    1.1%      LazyCompile: ~resolveOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:570:24
+      1  100.0%        LazyCompile: ~createCollection /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/db.js:156:21
+      1  100.0%          LazyCompile: ~createCollection /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:401:82
+      1  100.0%            LazyCompile: ~Connection.onOpen /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:637:39
+      1    1.1%      LazyCompile: ~release /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sessions.js:623:12
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sessions.js:137:43
+      1  100.0%          LazyCompile: ~maybeCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/utils.js:336:23
+      1  100.0%            LazyCompile: ~endSession /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sessions.js:133:15
+      1    1.1%      LazyCompile: ~refreshRuntimeOptions node:internal/process/pre_execution:108:31
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~readUInt32LE node:internal/buffer:215:22
+      1  100.0%        LazyCompile: ~parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:426:10
+      1  100.0%          LazyCompile: ~onMessage /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1    1.1%      LazyCompile: ~read node:internal/fs/read_file_context:85:7
+      1  100.0%        LazyCompile: ~readFileAfterStat node:fs:336:27
+      1    1.1%      LazyCompile: ~read /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1  100.0%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.1%      LazyCompile: ~processIncomingData /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1  100.0%        Function: ^_write /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%          Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%            Function: ^_write node:internal/streams/writable:286:16
+      1    1.1%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+      1  100.0%        LazyCompile: ~HI /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:238:12
+      1  100.0%          LazyCompile: ~continueScramConversation /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.1%      LazyCompile: ~parseWithoutProcessing /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%        LazyCompile: ~parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1  100.0%          LazyCompile: ~compileInput /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            LazyCompile: ~ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.1%      LazyCompile: ~parseOpts /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%        LazyCompile: ~Run /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%          LazyCompile: ~exports.find /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bcrypt/bcrypt.js:1:1
+      1    1.1%      LazyCompile: ~parseAuthority /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/url-state-machine.js:731:71
+      1  100.0%        LazyCompile: ~URLStateMachine /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/url-state-machine.js:481:25
+      1  100.0%          LazyCompile: ~module.exports.basicURLParse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/url-state-machine.js:1206:41
+      1  100.0%            LazyCompile: ~URLImpl /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/URL-impl.js:7:14
+      1    1.1%      LazyCompile: ~open node:internal/fs/promises:536:20
+      1  100.0%        /usr/local/bin/node
+      1    1.1%      LazyCompile: ~onWriteComplete node:internal/stream_base_commons:80:25
+      1    1.1%      LazyCompile: ~onWebSocket /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/server.js:408:16
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/server.js:397:54
+      1  100.0%          LazyCompile: ~completeUpgrade /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/ws/lib/websocket-server.js:333:18
+      1  100.0%            LazyCompile: ~handleUpgrade /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/ws/lib/websocket-server.js:227:16
+      1    1.1%      LazyCompile: ~onMessage /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection.js:154:14
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~processIncomingData /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1    1.1%      LazyCompile: ~ns /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/utils.js:293:12
+      1  100.0%        LazyCompile: ~MongoClient /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:44:16
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:236:43
+      1  100.0%            LazyCompile: ~maybeCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/utils.js:336:23
+      1    1.1%      LazyCompile: ~maybeCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/utils.js:336:23
+      1  100.0%        LazyCompile: ~connect /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:112:12
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/mongo_client.js:236:43
+      1  100.0%            LazyCompile: ~maybeCallback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/utils.js:336:23
+      1    1.1%      LazyCompile: ~makeFirstMessage /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:61:26
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/crypto/random:107:43
+      1  100.0%            LazyCompile: ~onJobDone node:internal/crypto/random:302:19
+      1    1.1%      LazyCompile: ~lookup node:dns:140:16
+      1  100.0%        LazyCompile: ~<anonymous> node:net:1185:61
+      1  100.0%          LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      1  100.0%            LazyCompile: ~lookupAndConnect node:net:1129:26
+      1    1.1%      LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%        Function: ^processTimers node:internal/timers:492:25
+      1    1.1%      LazyCompile: ~fromArrayBuffer node:buffer:454:25
+      1  100.0%        LazyCompile: ~ensureBuffer /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/ensure_buffer.js:15:22
+      1  100.0%          LazyCompile: ~Binary /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/bson/lib/binary.js:42:20
+      1  100.0%            LazyCompile: ~continueScramConversation /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1    1.1%      LazyCompile: ~freeParser node:_http_common:180:20
+      1  100.0%        LazyCompile: ~onParserExecuteCommon node:_http_server:847:31
+      1  100.0%          LazyCompile: ~onParserExecute node:_http_server:783:25
+      1    1.1%      LazyCompile: ~exports.setup /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/URL.js:49:17
+      1  100.0%        LazyCompile: ~URL /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/URL.js:90:16
+      1  100.0%          LazyCompile: ~URLWithoutHost /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb-connection-string-url/lib/index.js:74:1
+      1  100.0%            LazyCompile: ~ConnectionString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1    1.1%      LazyCompile: ~equals /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/server_description.js:95:11
+      1  100.0%        LazyCompile: ~serverUpdateHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:313:24
+      1  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/sdam/topology.js:473:53
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.1%      LazyCompile: ~enable /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/send/node_modules/debug/src/debug.js:138:16
+      1  100.0%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/send/node_modules/debug/src/node.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.1%      LazyCompile: ~doWrite node:internal/streams/writable:401:17
+      1  100.0%        Function: ^clearBuffer node:internal/streams/writable:532:21
+      1  100.0%          Function: ^Writable.uncork node:internal/streams/writable:344:37
+      1  100.0%            LazyCompile: ~end node:_http_outgoing:953:45
+      1    1.1%      LazyCompile: ~debug /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/debug/src/common.js:66:17
+      1  100.0%        LazyCompile: ~MongoStore /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%          LazyCompile: ~create /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%            Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/server.js:1:1
+      1    1.1%      LazyCompile: ~createFunctionContext /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      1  100.0%        LazyCompile: ~compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          LazyCompile: ~compileInput /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            LazyCompile: ~ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.1%      LazyCompile: ~createDebug /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/debug/src/common.js:60:22
+      1  100.0%        Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/socket.io-parser/build/cjs/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    1.1%      LazyCompile: ~compileInput /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%        LazyCompile: ~ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1  100.0%          LazyCompile: ~ExpressHandlebars._renderTemplate /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1    1.1%      LazyCompile: ~cloneObject /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/clone.js:119:21
+      1  100.0%        LazyCompile: ~clone /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/clone.js:29:15
+      1  100.0%          LazyCompile: ~SchemaTypeOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/options/SchemaTypeOptions.js:18:14
+      1  100.0%            LazyCompile: ~SchemaObjectIdOptions /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/options/SchemaObjectIdOptions.js:18:1
+      1    1.1%      LazyCompile: ~attempt /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/passport/lib/middleware/authenticate.js:180:22
+      1  100.0%        LazyCompile: ~authenticate /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/passport/lib/middleware/authenticate.js:94:31
+      1  100.0%          LazyCompile: ~handle /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:293:23
+      1    1.1%      LazyCompile: ~attach /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/socket.io/dist/index.js:187:11
+      1  100.0%        LazyCompile: ~Server /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/socket.io/dist/index.js:79:16
+      1  100.0%          Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/server.js:1:1
+      1  100.0%            /usr/local/bin/node
+      1    1.1%      LazyCompile: ~assertOffset node:internal/crypto/random:65:22
+      1  100.0%        LazyCompile: ~randomFillSync node:internal/crypto/random:113:24
+      1  100.0%          LazyCompile: ~randomBytes node:internal/crypto/random:93:21
+      1  100.0%            LazyCompile: ~randomBytesSync /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/random-bytes/index.js:72:25
+      1    1.1%      LazyCompile: ~arrayFlatten /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/array-flatten/array-flatten.js:58:23
+      1  100.0%        LazyCompile: ~Route.<computed> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/route.js:202:37
+      1  100.0%          LazyCompile: ~proto.<computed> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:519:27
+      1  100.0%            Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/routes/app.routes.js:1:1
+      1    1.1%      LazyCompile: ~_write /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%        Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%          Function: ^_write node:internal/streams/writable:286:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:336:36
+      1    1.1%      LazyCompile: ~_storeHeader node:_http_outgoing:420:22
+      1  100.0%        LazyCompile: ~writeHead node:_http_server:338:19
+      1  100.0%          LazyCompile: ~writeHead /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/on-headers/index.js:28:29
+      1  100.0%            Function: ^_implicitHeader node:_http_server:333:68
+      1    1.1%      LazyCompile: ~Topology /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:40:16
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:114:43
+      1  100.0%          /usr/local/bin/node
+      1    1.1%      LazyCompile: ~TLSSocket._wrapHandle node:_tls_wrap:601:43
+      1  100.0%        LazyCompile: ~TLSSocket node:_tls_wrap:469:19
+      1  100.0%          LazyCompile: ~connect node:_tls_wrap:1605:35
+      1  100.0%            LazyCompile: ~makeConnection /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1    1.1%      LazyCompile: ~Socket._writeGeneric node:net:891:42
+      1  100.0%        LazyCompile: ~Socket._write node:net:928:35
+      1  100.0%          LazyCompile: ~writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%            LazyCompile: ~_write node:internal/streams/writable:286:16
+      1    1.1%      LazyCompile: ~Socket node:net:329:16
+      1  100.0%        Function: ^TLSSocket node:_tls_wrap:469:19
+      1  100.0%          Function: ^connect node:_tls_wrap:1605:35
+      1  100.0%            LazyCompile: ~makeConnection /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1    1.1%      LazyCompile: ~Server /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/socket.io/dist/index.js:79:16
+      1  100.0%        Script: ~<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/server.js:1:1
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            /usr/local/bin/node
+      1    1.1%      LazyCompile: ~Server /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:29:16
+      1  100.0%        LazyCompile: ~createAndConnectServer /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:474:32
+      1  100.0%          LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:173:57
+      1  100.0%            /usr/local/bin/node
+      1    1.1%      LazyCompile: ~SchemaType /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schematype.js:42:20
+      1  100.0%        LazyCompile: ~SchemaString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schema/string.js:25:22
+      1  100.0%          LazyCompile: ~Schema.interpretAsType /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schema.js:1162:44
+      1  100.0%            LazyCompile: ~Schema.path /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/schema.js:894:33
+      1    1.1%      LazyCompile: ~Polling /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/transports/polling.js:19:16
+      1  100.0%        LazyCompile: ~polling /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/transports/index.js:15:17
+      1  100.0%          LazyCompile: ~createTransport /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/server.js:333:20
+      1  100.0%            LazyCompile: ~handshake /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/engine.io/build/server.js:173:20
+      1    1.1%      LazyCompile: ~NativeCollection.onOpen /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:45:45
+      1  100.0%        LazyCompile: ~Connection.onOpen /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:637:39
+      1  100.0%          LazyCompile: ~_setClient /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:859:20
+      1  100.0%            LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/connection.js:810:20
+      1    1.1%      LazyCompile: ~Glob._readdirError /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/glob/glob.js:581:41
+      1  100.0%        Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express-handlebars/node_modules/glob/glob.js:551:19
+      1  100.0%          Function: ^<anonymous> node:fs:197:10
+      1    1.1%      LazyCompile: ~Gauge._computeTheme /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/gauge/index.js:85:42
+      1  100.0%        LazyCompile: ~Gauge /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/gauge/index.js:19:16
+      1  100.0%          Function: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/npmlog/log.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    1.1%      LazyCompile: ~Connection /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:38:16
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%          LazyCompile: ~callback /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1  100.0%            LazyCompile: ~connectHandler /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:313:28
+      1    1.1%      LazyCompile: ~B node:internal/deps/cjs-module-lexer/dist/lexer:1:824
+      1  100.0%        LazyCompile: ~parse node:internal/deps/cjs-module-lexer/dist/lexer:1:131
+      1  100.0%          LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:193:34
+      1  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      1    1.1%      LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/URL.js:378:56
+      1  100.0%        LazyCompile: ~getSameObject /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/utils.js:65:23
+      1  100.0%          LazyCompile: ~get searchParams /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/whatwg-url/lib/URL.js:371:21
+      1  100.0%            LazyCompile: ~ConnectionString /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1    1.1%      LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/socket.io/dist/namespace.js:204:30
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.1%      LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:178:73
+      1  100.0%        Function: ^onMessage /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%          Function: ^<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.1%      LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/lib/helpers/promiseOrCallback.js:11:25
+      1  100.0%        LazyCompile: ~<anonymous> /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:349:57
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.1%      Function: ~<anonymous> :1:20
+      1  100.0%        LazyCompile: ~main /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:207:18
+      1  100.0%          LazyCompile: ~ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1  100.0%            LazyCompile: ~ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.1%      Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      1    1.1%      Function: ^compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%        Function: ^compileChildren /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1  100.0%          Function: ^compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            Function: ^compileChildren /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1    1.1%      Function: ^_handles_method /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/route.js:58:59
+      1  100.0%        LazyCompile: *next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          Function: ^handle /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            Function: ^router /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/index.js:46:18
+      1    1.1%      Function: ^WhitespaceControl /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:12:27
+      1  100.0%        Function: ^parse /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1  100.0%          Function: ^compileInput /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.1%      Function: ^Literal /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:20:17
+      1  100.0%        Function: ^pushStackLiteral /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:877:46
+      1  100.0%          Function: ^pushProgram /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:615:36
+      1  100.0%            Function: ^compile /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    1.1%      Function: ^<anonymous> file:///home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/src/routes/child.routes.js:17:24
+      1  100.0%        Function: ^handle /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /home/lean/Documents/Programacion/cursos/CODER/backend-coder/16_Entrega-reinicio/node_modules/express/lib/router/route.js:98:45
+

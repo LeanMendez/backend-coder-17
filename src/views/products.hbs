@@ -1,0 +1,37 @@
+{{#if username}}
+    <h1>Bienvenido {{username}}</h1>
+    <a class="btn btn-secondary" href="./logout">Cerrar Sesión</a>
+{{/if}}
+
+<form class="form-group col" onsubmit="return sendprod()">
+        <label>Producto</label>
+        <input class="input" id="title" type="text" name="title">
+        <label>Precio</label>
+        <input class="input" id="price" type="number" name="price">
+        <label>URL</label>
+        <input  class="input" id="thumbnail"  type="text" name="thumbnail">
+        <input type="submit" id="sendProd" class="btn btn-success" value="enviar">
+</form>
+
+{{#if products}}
+<table class="table table-dark">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>URL</th>
+    </tr>
+    </thead>
+    <tbody id="prodDetail">
+        {{#each products}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td><img src="{{this.thumbnail}}" alt="{{this.title}}"> </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/if}}
+
+<a class="btn btn-success" href="/api/chat">Chat</a>

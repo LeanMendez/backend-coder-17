@@ -1,0 +1,11 @@
+<h1>Iniciar sesión</h1>
+{{#if error}}
+        <p class="p-3 bg-danger text-white">{{error}}</p>
+    {{/if}}
+<form action="/auth/login" class="form-group col" method="POST" >
+        <label for="username">Usuario</label>
+        <input class="input" id="username" type="text" name="username">
+        <label for="password" >Password</label>
+        <input class="input" id="password" type="password" name="password">
+        <input type="submit" id="Iniciar Sesión" class="btn btn-success" value="enviar">
+</form>
